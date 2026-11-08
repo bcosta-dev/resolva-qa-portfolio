@@ -16,6 +16,3 @@ Zephyr Essential.
 - 21 execuções históricas: 17 sucessos e 4 falhas.
 - 16 últimas execuções com sucesso.
 - 5 casos de abertura de chamados ainda não executados.
-
-Os relatórios serão publicados após anonimização
-das informações pessoais.
