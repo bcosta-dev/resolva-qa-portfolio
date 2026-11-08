@@ -59,4 +59,18 @@ A correção do RES-3 permaneceu funcionando.
 
 Esse resultado não comprova, isoladamente, a correção do RES-6, pois os defeitos envolvem partes diferentes do endereço de e-mail.
 
-## 8. Corre
+## 8. Correção e reteste
+
+Após a correção, o caso de teste RES-T28 foi executado manualmente utilizando o endereço `teste..usuario@exemplo.com`.
+
+**Resultado:** Aprovado.
+
+O formulário passou a rejeitar o endereço inválido, apresentando a mensagem `Digite um e-mail válido!`, direcionando o foco ao campo E-mail e definindo `aria-invalid="true"`.
+
+Também foram realizados testes de regressão, todos aprovados:
+
+- E-mail com pontos consecutivos no domínio rejeitado.
+- E-mail válido convencional aceito.
+- E-mail válido contendo `+` aceito.
+
+**Conclusão:** O defeito RES-6 foi corrigido e validado manualmente. Não foram identificadas regressões nos cenários verificados.
